@@ -7,7 +7,7 @@ public class Driver4 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        HashMap<String, Account> accounts = new HashMap<>();
+        LinkedHashMap<String, Account> accounts = new LinkedHashMap<>();
         List<Transaction> allTransactions = new ArrayList<>();
         String line;
         int transactionId = 1;
