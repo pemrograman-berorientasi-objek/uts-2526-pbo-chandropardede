@@ -18,9 +18,6 @@ public class Driver4 {
             if (line.equals("---")) {
                 break;
             }
-
-
-            
             
             String[] parts = line.split("#");
             
