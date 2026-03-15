@@ -17,6 +17,31 @@ public abstract class Transaction {
         this.description = description;
     }
 
+    // Getters
+    public int getId() {
+        return id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
     public abstract String getType();
 
+    @Override
+    public String toString() {
+        return id + "|" + getType() + "|" + amount + "|" + timestamp + "|" + description;
+    }
 }

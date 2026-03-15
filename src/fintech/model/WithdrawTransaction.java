@@ -7,8 +7,13 @@ public class WithdrawTransaction extends Transaction {
         super(id, username, amount, timestamp, description);
     }
 
+    @Override
     public String getType() {
         return "withdraw";
     }
 
+    @Override
+    public String toString() {
+        return id + "|" + getType() + "|" + (-amount) + "|" + timestamp + "|" + description;
+    }
 }

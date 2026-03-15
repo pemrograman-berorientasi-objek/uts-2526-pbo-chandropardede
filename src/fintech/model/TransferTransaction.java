@@ -10,6 +10,7 @@ public class TransferTransaction extends Transaction {
         this.receiver = receiver;
     }
 
+    @Override
     public String getType() {
         return "transfer";
     }
@@ -17,5 +18,4 @@ public class TransferTransaction extends Transaction {
     public String getReceiver() {
         return receiver;
     }
-
 }

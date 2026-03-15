@@ -7,8 +7,8 @@ public class DepositTransaction extends Transaction {
         super(id, username, amount, timestamp, description);
     }
 
+    @Override
     public String getType() {
         return "deposit";
     }
-
 }
